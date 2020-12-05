@@ -1,0 +1,10 @@
+language: java
+java:
+  - "8"
+cache: yarn
+script:
+  -echo 'Start build'
+  -echo 'Installing Deps'
+  -yarn
+  -echo 'Testing'
+  -nrm run test:prod
